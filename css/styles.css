@@ -80,7 +80,7 @@ h3{
     padding: 1rem;
     text-align: center;
 }
-.fas{
+i{
     font-size: 6rem;
     color: var(--mainTextColor);
 }
@@ -88,6 +88,7 @@ h3{
 footer{
     background-color: var(--secondColor);
     padding: 2rem 0 1rem;
+    margin-top: 10rem;
 }
 
 @media(min-width:700px){

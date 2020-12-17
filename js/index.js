@@ -11,7 +11,15 @@ const effectparagraph = document.querySelector('.rating-aspects section:nth-chil
 const effectratingsvg = document.querySelector('.rating-aspects section:nth-child(3) i:first-of-type')
 const tasteparagraph = document.querySelector('.rating-aspects section:nth-child(4) p:first-of-type')
 const tasteratingsvg = document.querySelector('.rating-aspects section:nth-child(4) i:first-of-type')
+const writeupparagraph = document.querySelector('.blog-writeup p')
+window.addEventListener('DOMContentLoaded',function(){
+
+    console.log("dom loaded")
+})
+
 window.addEventListener('load', function(){
+    console.log("page loaded")
+
     let productArray = []
     const incomingID = GetIncomingID()
     fetch("./js/products.json")
@@ -32,20 +40,31 @@ window.addEventListener('load', function(){
             //title
             pageTitle.innerText = chosenProduct.title;
             //youtubelink
-            embededvideo.querySelector('iframe').remove()
             embededvideo.appendChild(elementstemplate.youtube)
             //image1
+             productimage1.src = chosenProduct.imgSrc1;
             //image2
+            productimage2.src = chosenProduct.imgSrc2;
             //generalSVG
+            generalrating.classList = chosenProduct.generalRating;
             //priceparagraph
+            priceparagraph.innerText = chosenProduct.price;
             //pricesvg
+            priceratingsvg.classList = chosenProduct.priceRating;
             //strengthparagraph
+            strengthparagraph.innerText = chosenProduct.strength;
             //strengthsvg
+            strengthratingsvg.classList = chosenProduct.strengthRating;
             //effectparagraph
+            effectparagraph.innerText = chosenProduct.effect;
             //effectsvg
+            effectratingsvg.classList = chosenProduct.effectRating;
             //taste paragraph
+            tasteparagraph.innerText = chosenProduct.taste;
             //taste rating
+            tasteratingsvg.classList = chosenProduct.tasteRating;
             //writeup blog post
+            writeupparagraph.innerText = chosenProduct.writeupBlog;
     
         }
         else{
