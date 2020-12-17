@@ -51,4 +51,22 @@
         "tasteRating":"fab fa-octopus-deploy",
         "writeupBlog":"shaken, not stirred"
     }
+    ,
+    {
+        "productID":"CNB-00901781",
+        "title":"Pineapple Soft Chews",
+        "imgSrc1":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FyUaVwvoTLSVAGBIHdoYg_sr71+pineapple+gummy+.png?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=b72be722c4320a810c0908a8c053d8a7",
+        "imgSrc2":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fbrands%2Flogos%2FfAYqrIWJQQeuliaAh3Fx_C3LS5972_400x400.jpg?ixlib=rails-4.0.0&w=148&h=148&fit=crop&s=53a4e51df5722006ab54dc9fd7e8ae01",
+        "YouTubeEmbed":"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/RMDlYWbKALw\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        "generalRating":"fas fa-dragon",
+        "price":"it costs money, this is a test... hopefully it gets changed later",
+        "priceRating":"fas fa-dragon",
+        "strength":"10mg each - 5pack",
+        "strengthRating":"fas fa-dragon",
+        "effect":"works... again... this is a test page",
+        "effectRating":"fas fa-dragon",
+        "taste":"tastes like sugar.... yet again test page",
+        "tasteRating":"fas fa-dragon",
+        "writeupBlog":"test page ldkngowidownvnowndonp"
+    }
 ]
