@@ -19,6 +19,7 @@ body{
 .container{
     max-width: 1180px;
     margin: 0 auto;
+    overflow: hidden;
 }
 header{
     background-color: var(--secondColor);
@@ -37,8 +38,8 @@ h1{
     font-size: 4rem;
     line-height: 4rem;
 }
-.youtube-link{
-    max-width: 70vw;
+.youtube-link, iframe{
+    max-width: 90vw;
 }
 
 .image-spread{
