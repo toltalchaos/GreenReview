@@ -1,0 +1,17 @@
+  {
+        "productID":"000",
+        "title":" blank page",
+        "imgSrc1":"",
+        "imgSrc2":"",
+        "YouTubeEmbed":"",
+        "generalRating":"",
+        "price":"",
+        "priceRating":"",
+        "strength":"",
+        "strengthRating":"",
+        "effect":"",
+        "effectRating":"",
+        "taste":"",
+        "tasteRating":"",
+        "writeupBlog":""
+    },

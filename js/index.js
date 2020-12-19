@@ -12,30 +12,72 @@ const effectratingsvg = document.querySelector('.rating-aspects section:nth-chil
 const tasteparagraph = document.querySelector('.rating-aspects section:nth-child(4) p:first-of-type')
 const tasteratingsvg = document.querySelector('.rating-aspects section:nth-child(4) i:first-of-type')
 const writeupparagraph = document.querySelector('.blog-writeup p')
-window.addEventListener('DOMContentLoaded',function(){
-
-    console.log("dom loaded")
-})
 
 window.addEventListener('load', function(){
-    console.log("page loaded")
-
     let productArray = []
     const incomingID = GetIncomingID()
+    //logic for DDL menu popout
+    //--- handle for ddl menu (x2)
+    //-- handle for ddl list
+    const ddlProductList = document.querySelector('.product-list')
+    const dropdownburger = document.querySelector('.burger i')
+    const dropdownbar = document.querySelector('.dropdowntitle')
+
+    // --- event listener on ddl menu handles
+        // --- remove class "not-visible" from productlist
+        // --- if not includes "not visible" ADD class
+        dropdownbar.addEventListener('click',function(){
+            console.log("click registered")
+            if(ddlProductList.classList.contains('not-visible')){
+                ddlProductList.classList.remove('not-visible')
+            }
+            else{
+                ddlProductList.classList.add('not-visible')
+            }
+        })
+        dropdownburger.addEventListener('click',function(){
+            console.log("click registered")
+            if(ddlProductList.classList.contains('not-visible')){
+                ddlProductList.classList.remove('not-visible')
+            }
+            else{
+                ddlProductList.classList.add('not-visible')
+            }
+        })
+
+    //fill page data from json file
     fetch("./js/products.json")
     .then((resolve) => resolve.json())
     .then((jsondata) => {productArray = [...jsondata]
-        //find the url chosen product 
+        // logic for fill DDL from json array file.
+    //parse entire array for desired values
+    let ddllisttemplate = ""; 
+     //loop through data
+    productArray.forEach(product => {
+        ddllisttemplate += `
+        <li>
+        <a href="?productID=${product.productID}"> ${product.title} </a>
+        </li>`
+    });
+   //create template for desired ouput (loop and add)
+   //add fragment to dom under ddl handle
+   ddlProductList.querySelector('ul').appendChild(document.createRange().createContextualFragment(ddllisttemplate)) 
+
+
+        //find the url chosen product + fill doc
     const chosenProduct = productArray.find(function(product){
         //if url id reurns this product 
         if(incomingID === product.productID){
             console.log("found matching ID")
+            
             return product
         }
     })
         if(chosenProduct != undefined){
+            dropdownbar.querySelector('p').innerText = chosenProduct.title
+            //add logic for inner text dropdownbar.p for incoming ID
+            const elementstemplate = BuildTemplateModels(chosenProduct)
             //build template models
-         const elementstemplate = BuildTemplateModels(chosenProduct)
             //insert into dom and replace values where needed
             //title
             pageTitle.innerText = chosenProduct.title;
@@ -75,7 +117,7 @@ window.addEventListener('load', function(){
     
         
     })
-//selectors for all the changing elements
+
 
 
 
