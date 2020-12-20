@@ -22,12 +22,12 @@ window.addEventListener('load', function(){
     const ddlProductList = document.querySelector('.product-list')
     const dropdownburger = document.querySelector('.burger i')
     const dropdownbar = document.querySelector('.dropdowntitle')
+    const thesearchform = document.querySelector('form')
 
     // --- event listener on ddl menu handles
         // --- remove class "not-visible" from productlist
         // --- if not includes "not visible" ADD class
         dropdownbar.addEventListener('click',function(){
-            console.log("click registered")
             if(ddlProductList.classList.contains('not-visible')){
                 ddlProductList.classList.remove('not-visible')
             }
@@ -55,13 +55,23 @@ window.addEventListener('load', function(){
      //loop through data
     productArray.forEach(product => {
         ddllisttemplate += `
-        <li>
+        <li class="product-item">
         <a href="?productID=${product.productID}"> ${product.title} </a>
         </li>`
     });
    //create template for desired ouput (loop and add)
    //add fragment to dom under ddl handle
    ddlProductList.querySelector('ul').appendChild(document.createRange().createContextualFragment(ddllisttemplate)) 
+    
+   
+   //event listener for search input - call function to filter list results
+    thesearchform.addEventListener('submit', function(evnt){
+        evnt.preventDefault()
+        FilterSearchResults(thesearchform)
+    })
+    thesearchform.querySelector('input').addEventListener('input',function(){
+        FilterSearchResults(thesearchform)
+    })
 
 
         //find the url chosen product + fill doc
@@ -136,23 +146,27 @@ const GetIncomingID = () => {
 //commented out for tags in favor of class name changes
 const BuildTemplateModels = (productItem) => {
     let elementsObject;
-    youtubelinktemplate = document.createRange().createContextualFragment(productItem.YouTubeEmbed)
-    // generalratingtemplate = document.createRange().createContextualFragment(productItem.generalRating)
-    // priceratingtemplate = document.createRange().createContextualFragment(productItem.priceRating)
-    // strengthRatingtemplate = document.createRange().createContextualFragment(productItem.strengthRating)
-    // effectRatingtemplate = document.createRange().createContextualFragment(productItem.effectRating)
-    // tasteRatingtemplate = document.createRange().createContextualFragment(productItem.tasteRating)
-
+    const youtubelinkframe = `<iframe width="560" height="315" src="${productItem.YouTubeEmbed}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+    youtubelinktemplate = document.createRange().createContextualFragment(youtubelinkframe)
+    
     elementsObject = {
-        youtube: youtubelinktemplate,
-        // RatingGen: generalratingtemplate,
-        // RatingPrice: priceratingtemplate,
-        // RatingStr: strengthRatingtemplate,
-        // RatingEff: effectRatingtemplate,
-        // RatingTaste: tasteRatingtemplate
-
+        youtube: youtubelinktemplate
     }
     
     return elementsObject;
 
+}
+
+function FilterSearchResults(theform){
+    let inputvalue = theform.querySelector('input').value
+    let searchlistitems = document.getElementsByClassName('product-item')
+    for(let item of searchlistitems){
+        if(item.querySelector('a').innerText.toLowerCase().includes(inputvalue.toLowerCase())){
+            item.classList.remove('hide-me')
+        }
+        else{
+            item.classList.add('hide-me')
+        }
+    }
+    
 }
