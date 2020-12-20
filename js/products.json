@@ -52,4 +52,22 @@
         "tasteRating":"fas fa-dragon",
         "writeupBlog":"test page ldkngowidownvnowndonp"
     }
+    ,
+    {
+        "productID":"CNB-01000542",
+        "title":"Rio Bravo",
+        "imgSrc1":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2F3EG3bIdeToWc10SbxYiE_EDI2020A_Edison+Rio+Bravo+3.5-7g+Bottle_Shadow.jpg?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=f3cd5e6af263879313a8a32592020b5a",
+        "imgSrc2":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FvgNwuY0rQuSDOcwWJ7KT_Rio+Bravo+Bud.jpg?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=3aeb1209bbedf7c79e3ade68bf7da5c6",
+        "YouTubeEmbed":"https://www.youtube.com/embed/LrHMzfuB_E4",
+        "generalRating":"fas fa-air-freshener",
+        "price":"this price is fair for the product.",
+        "priceRating":"fas fa-air-freshener",
+        "strength":"medium - no signifigant burnout",
+        "strengthRating":"fas fa-air-freshener",
+        "effect":"body heavy",
+        "effectRating":"fas fa-air-freshener",
+        "taste":"piney and earthy",
+        "tasteRating":"fas fa-air-freshener",
+        "writeupBlog":"comes in multiple forms, preroll and flower. Most customers generally feel positive about this product."
+    }
 ]
