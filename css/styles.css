@@ -83,7 +83,8 @@ body .not-visible{
     left: 0;
     right: 0;
     transition: all 0.3s,  visibility 0.1s;
-    
+    border-radius: 0 0 1rem 1rem;
+
     
 }
 
@@ -218,6 +219,7 @@ footer{
         margin: 0 2rem 1rem;
         padding: 0 2rem;
         border-radius: 1rem;
+        width: initial!important;
     }
     nav{
         padding: 1rem 0;
