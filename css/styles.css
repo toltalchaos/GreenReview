@@ -9,6 +9,10 @@
     --MainFontstack:'Josefin Sans', sans-serif; 
     --secondFontStack: 'Kanit', sans-serif;
 }
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     background-color: var(--mainColor);
     color:var(--mainTextColor);
@@ -21,9 +25,11 @@ body{
     max-width: 1180px;
     margin: 0 auto;
     
+    
 }
 header{
     background-color: var(--secondColor);
+    
     
 }
 nav{
@@ -31,9 +37,12 @@ nav{
     position: relative;
     padding: 1rem 0 0;
     border-radius: 0 0 1rem 1rem;
+    max-width: 100vw;
+    
 }
 nav ul{
     padding: 2rem;
+    
 }
 nav ul li{
     list-style: none;
@@ -53,8 +62,10 @@ nav a:hover{
 body .not-visible{
     visibility: hidden;
     height: 0; 
-    left: 100%; 
+    left: 100%;
+    width: 0;
     transition: left 0.3s, visibility 0.1s;
+    
 }
 
 
@@ -103,6 +114,7 @@ form input{
     border-radius: 1rem 0 0 1rem;
     border-color: var(--secondTextColor);
     background-color: var(--mainColor);
+    max-width: 80%;
 }
 form button{
     border-radius: 0 1rem 1rem 0;
