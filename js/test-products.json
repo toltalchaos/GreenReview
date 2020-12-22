@@ -1,0 +1,92 @@
+[
+    {
+        "productID":"THISISATEST",
+        "title":"not a product but hentai",
+        "imgSrc1":"https://i.pinimg.com/236x/ad/00/3c/ad003c8ddbfcedcf765f3cea59440a0c--monster-girl-heavens.jpg",
+        "imgSrc2":"https://www.kindpng.com/picc/m/469-4696584_rias-gremory-christmas-png-transparent-png.png",
+        "YouTubeEmbed":"https://www.youtube.com/embed/lu54r5ltYxE",
+        "generalRating":"fas fa-book-dead",
+        "price":"hentai is always worth the price",
+        "priceRating":"fas fa-poop",
+        "strength":"hentai is a potent tool to be used responsibly",
+        "strengthRating":"far fa-grin-squint-tears",
+        "effect":"the effects of hentai may include complete satisfaction and loss of apetite",
+        "effectRating":"far fa-meh",
+        "taste":"please refrain from licking the hentai",
+        "tasteRating":"far fa-frown",
+        "writeupBlog":"this was supposed to be a joke.... however i learned a valuable lesson during this adventure.... never google \"hentai reviews\" excuse me while i go wash my eyeballs with gasoline."
+    }
+    ,
+    {
+        "productID":"MT",
+        "title":"Empty Product",
+        "imgSrc1":"",
+        "imgSrc2":"",
+        "YouTubeEmbed":"",
+        "generalRating":"",
+        "price":"",
+        "priceRating":"",
+        "strength":"",
+        "strengthRating":"",
+        "effect":"",
+        "effectRating":"",
+        "taste":"",
+        "tasteRating":"",
+        "writeupBlog":""
+    }
+    ,
+    ,
+    {
+        "productID":"007",
+        "title":" not a product but james bond ",
+        "imgSrc1":"data:image/jpeg;base64,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",
+        "imgSrc2":"https://static.wikia.nocookie.net/jamesbond/images/e/e6/Bond_-_Sean_Connery_-_Profile.jpg/revision/latest?cb=20130217190224",
+        "YouTubeEmbed":"https://www.youtube.com/embed/yHafN0M2kl0",
+        "generalRating":"fas fa-fighter-jet",
+        "price":"james bond is always worth the price of admission",
+        "priceRating":"fas fa-glass-martini",
+        "strength":"strong like ox",
+        "strengthRating":"fas fa-crosshairs",
+        "effect":"super potent",
+        "effectRating":"far fa-dizzy",
+        "taste":"juicy as heck",
+        "tasteRating":"fab fa-octopus-deploy",
+        "writeupBlog":"shaken, not stirred"
+    }
+    ,
+    {
+        "productID":"CNB-00901781",
+        "title":"Pineapple Soft Chews",
+        "imgSrc1":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FyUaVwvoTLSVAGBIHdoYg_sr71+pineapple+gummy+.png?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=b72be722c4320a810c0908a8c053d8a7",
+        "imgSrc2":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fbrands%2Flogos%2FfAYqrIWJQQeuliaAh3Fx_C3LS5972_400x400.jpg?ixlib=rails-4.0.0&w=148&h=148&fit=crop&s=53a4e51df5722006ab54dc9fd7e8ae01",
+        "YouTubeEmbed":"https://www.youtube.com/embed/RMDlYWbKALw",
+        "generalRating":"fas fa-dragon",
+        "price":"it costs money, this is a test... hopefully it gets changed later",
+        "priceRating":"fas fa-dragon",
+        "strength":"10mg each - 5pack",
+        "strengthRating":"fas fa-dragon",
+        "effect":"works... again... this is a test page",
+        "effectRating":"fas fa-dragon",
+        "taste":"tastes like sugar.... yet again test page",
+        "tasteRating":"fas fa-dragon",
+        "writeupBlog":"test page ldkngowidownvnowndonp"
+    }
+    ,
+    {
+        "productID":"CNB-01000542",
+        "title":"Rio Bravo",
+        "imgSrc1":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2F3EG3bIdeToWc10SbxYiE_EDI2020A_Edison+Rio+Bravo+3.5-7g+Bottle_Shadow.jpg?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=f3cd5e6af263879313a8a32592020b5a",
+        "imgSrc2":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FvgNwuY0rQuSDOcwWJ7KT_Rio+Bravo+Bud.jpg?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=3aeb1209bbedf7c79e3ade68bf7da5c6",
+        "YouTubeEmbed":"https://www.youtube.com/embed/LrHMzfuB_E4",
+        "generalRating":"fas fa-air-freshener",
+        "price":"this price is fair for the product.",
+        "priceRating":"fas fa-air-freshener",
+        "strength":"medium - no signifigant burnout",
+        "strengthRating":"fas fa-air-freshener",
+        "effect":"body heavy",
+        "effectRating":"fas fa-air-freshener",
+        "taste":"piney and earthy",
+        "tasteRating":"fas fa-air-freshener",
+        "writeupBlog":"comes in multiple forms, preroll and flower. Most customers generally feel positive about this product."
+    }
+]
