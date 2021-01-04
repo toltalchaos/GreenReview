@@ -19,7 +19,7 @@
     ,
     {
         "productID":"CNB-01000542",
-        "title":"Rio Bravo",
+        "title":"Edison - Rio Bravo",
         "imgSrc1":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2F3EG3bIdeToWc10SbxYiE_EDI2020A_Edison+Rio+Bravo+3.5-7g+Bottle_Shadow.jpg?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=f3cd5e6af263879313a8a32592020b5a",
         "imgSrc2":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FvgNwuY0rQuSDOcwWJ7KT_Rio+Bravo+Bud.jpg?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=3aeb1209bbedf7c79e3ade68bf7da5c6",
         "YouTubeEmbed":"https://www.youtube.com/embed/LrHMzfuB_E4",
@@ -33,5 +33,77 @@
         "taste":"piney and earthy",
         "tasteRating":"fas fa-air-freshener",
         "writeupBlog":"comes in multiple forms, preroll and flower. Most customers generally feel positive about this product."
+    }
+    ,
+    {
+        "productID":"CNB-01800122",
+        "title":"Namaste - Ultra Sour ",
+        "imgSrc1":"https://images.lift.co/resize/350x350/https://lift.co/uploads/AOeHtpOIbEEPDTEABtFi.png",
+        "imgSrc2":"https://preview.redd.it/i3ln26nvl6f41.jpg?width=640&crop=smart&auto=webp&s=41e28e2b7fc87c3c2acb626586340e4baa5cbfc3",
+        "YouTubeEmbed":"https://www.youtube.com/embed/m-uORJCgzkA",
+        "generalRating":"far fa-grin-beam",
+        "price":"the product is well priced ",
+        "priceRating":"far fa-grin-beam",
+        "strength":"Super Energetic, heavy",
+        "strengthRating":"far fa-grin-beam",
+        "effect":"slightly head heavy",
+        "effectRating":"far fa-meh",
+        "taste":"sour and citrus",
+        "tasteRating":"far fa-grin-beam",
+        "writeupBlog":"Comes in preroll and flower. Most customers give positive feedback. However those prone to anxiety/paranoia when smoking should stay clear of this one. "
+    }
+    ,
+    {
+        "productID":"CNB-00900447",
+        "title":"San Rafeal - Delahaze ",
+        "imgSrc1":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FfJpqTGYJQUyfaem3TIIo_http-52-60-121-34-upload-100117-00628582000241-a1c1-c01_1024x1024.png?ixlib=rails-",
+        "imgSrc2":"https://okanaganz.com/oz/wp-content/uploads/2019/03/Delahaze-by-san-rafael-71-bc-cannabis-stores-medreleaf-okanaganz.jpg",
+        "YouTubeEmbed":"https://www.youtube.com/embed/s5sEdjej1aM" ,
+        "generalRating":"far fa-frown",
+        "price":"not worth the price ",
+        "priceRating":"far fa-meh",
+        "strength":"Heavy and lethargic",
+        "strengthRating":"far fa-meh",
+        "effect":"head heavy",
+        "effectRating":"far fa-grin-beam",
+        "taste":"Gasey and Sweet",
+        "tasteRating":"far fa-frown",
+        "writeupBlog":"Comes in preroll and flower, however I find the quality on this one quite dry and the nugs quite small. The high also burns out really quickly. Most people buy it once to try and then not again."
+    }
+    ,
+    {
+        "productID":"CNB-01001840",
+        "title":"Edison - The General ",
+        "imgSrc1":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FWum8n6GKSciQy7R4SH9u_TheGeneralJar.png?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=a90f6d662e5a562ba0d6848250cc9530",
+        "imgSrc2":"https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FfNTKyQ2ESqIqRGookogo_TheGeneralBud+wshadow.png?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=185cb9b32c5cbc76cff2371d54951412",
+        "YouTubeEmbed":"https://www.youtube.com/embed/d7J5XpVVUL8",
+        "generalRating":"far fa-meh",
+        "price":"The price is fair for the product",
+        "priceRating":"far fa-grin-beam",
+        "strength":"Heavy and Energetic",
+        "strengthRating":"far fa-grin-beam",
+        "effect":"Head heavy",
+        "effectRating":"far fa-meh",
+        "taste":"Gasey and Citrus ",
+        "tasteRating":"far fa-meh",
+        "writeupBlog":"Come in pre-roll and flower. The buds are nice and far from dry. The high is however short lived. Most customers don't usually buy this one but there are a fair share of regulars to this strain. "
+    }
+    ,
+    {
+        "productID":"CNB-01300628",
+        "title":"Color Cannabis - Pedro's Sweet Sativa",
+        "imgSrc1":"https://d3d0zb8c2hchwj.cloudfront.net/img/products/catalogue/color/pedro.png",
+        "imgSrc2":"https://images.ctfassets.net/w2btucrf6tkn/71QA4ikZeGUhmDmIUidsSL/13613ad85b2d68757be155a386c06109/BlueberrySeagal.png?fm=webp&q=80&w=800",
+        "YouTubeEmbed":"https://www.youtube.com/embed/-x87VY9tA_Q",
+        "generalRating":"far fa-grin-beam",
+        "price":"Worth the price",
+        "priceRating":"far fa-grin-beam",
+        "strength":"Energetic and Giggly",
+        "strengthRating":"far fa-grin-beam",
+        "effect":"Balanced Head/Body",
+        "effectRating":"far fa-grin-beam",
+        "taste":"Sweet and Sour",
+        "tasteRating":"far fa-grin-beam",
+        "writeupBlog":"Comes in preroll, flower and vape. It is one of those unique strains that always suprises people. Not high in THC but the high is wonderful. Majority of people re-buy this one. "
     }
 ]
