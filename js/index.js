@@ -49,6 +49,9 @@ window.addEventListener('load', function(){
     fetch("./js/products.json")
     .then((resolve) => resolve.json())
     .then((jsondata) => {productArray = [...jsondata]
+        productArray.sort(function(a,b){
+            return CompareItemNames(a.title, b.title)
+        })
         // logic for fill DDL from json array file.
     //parse entire array for desired values
     let ddllisttemplate = ""; 
@@ -169,4 +172,12 @@ function FilterSearchResults(theform){
         }
     }
     
+}
+
+function CompareItemNames(a, b){
+    a = a.toLowerCase()
+    b = b.toLowerCase()
+    return (a < b) ? -1 : (a > b) ? 1 : 0;
+
+
 }
