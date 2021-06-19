@@ -14,11 +14,13 @@ html{
     overflow-x: hidden;
 }
 body{
+    
     background-color: var(--mainColor);
     color:var(--mainTextColor);
     font-family: var(--MainFontstack);
     overflow-x: hidden;
 }
+
 
 
 .container{
@@ -127,7 +129,9 @@ form button i{
    color: var(--secondTextColor);
 }
 
-
+svg{
+    min-width: 10vw;
+}
 
 .page-title{
     display: flex;

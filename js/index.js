@@ -103,23 +103,25 @@ window.addEventListener('load', function(){
             //image2
             productimage2.src = chosenprod.imgTwo;
             //generalSVG
-            generalrating.innerHTML = chosenprod.generalRating;
+            generalrating.outerHTML = chosenprod.generalRating;
+            //outter html
+            //inner html
             //priceparagraph
             priceparagraph.innerText = chosenprod.priceDesc;
             //pricesvg
-            priceratingsvg.classList = chosenprod.priceRating;
+            priceratingsvg.outerHTML = chosenprod.priceRating;
             //strengthparagraph
             strengthparagraph.innerText = chosenprod.strengthDesc;
             //strengthsvg
-            strengthratingsvg.classList = chosenprod.strengthRating;
+            strengthratingsvg.outerHTML = chosenprod.strengthRating;
             //effectparagraph
             effectparagraph.innerText = chosenprod.effectDesc;
             //effectsvg
-            effectratingsvg.classList = chosenprod.effectRating;
+            effectratingsvg.outerHTML = chosenprod.effectRating;
             //taste paragraph
             tasteparagraph.innerText = chosenprod.tasteDesc;
             //taste rating
-            tasteratingsvg.classList = chosenprod.tasteRating;
+            tasteratingsvg.outerHTML = chosenprod.tasteRating;
             //writeup blog post
             writeupparagraph.innerText = chosenprod.blog;
     
