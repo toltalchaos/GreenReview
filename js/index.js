@@ -104,8 +104,6 @@ window.addEventListener('load', function(){
             productimage2.src = chosenprod.imgTwo;
             //generalSVG
             generalrating.outerHTML = chosenprod.genrating;
-            //outter html
-            //inner html
             //priceparagraph
             priceparagraph.innerText = chosenprod.priceDesc;
             //pricesvg
