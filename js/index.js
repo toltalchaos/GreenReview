@@ -15,7 +15,9 @@ const writeupparagraph = document.querySelector('.blog-writeup p')
 
 window.addEventListener('load', function(){
     let productArray = []
+    let ddllisttemplate = ""; 
     const incomingID = GetIncomingID()
+ 
     //logic for DDL menu popout
     //--- handle for ddl menu (x2)
     //-- handle for ddl list
@@ -46,22 +48,27 @@ window.addEventListener('load', function(){
         })
 
     //fill page data from json file
-    fetch("./js/products.json")
+    fetch("https://doc-review-green-default-rtdb.firebaseio.com/products.json")
     .then((resolve) => resolve.json())
-    .then((jsondata) => {productArray = [...jsondata]
+    .then((jsondata) => {
+        productArray = [jsondata]
+        productArray = Array.from(productArray)
         productArray.sort(function(a,b){
             return CompareItemNames(a.title, b.title)
         })
+
         // logic for fill DDL from json array file.
     //parse entire array for desired values
-    let ddllisttemplate = ""; 
+   
      //loop through data
-    productArray.forEach(product => {
+     
+    for (const product in productArray[0]) {
         ddllisttemplate += `
         <li class="product-item">
-        <a href="?productID=${product.productID}"> ${product.title} </a>
-        </li>`
-    });
+        <a href="?productID=${productArray[0][product].productId}"> ${productArray[0][product].title} </a>
+        </li>`;
+ 
+    };
    //create template for desired ouput (loop and add)
    //add fragment to dom under ddl handle
    ddlProductList.querySelector('ul').appendChild(document.createRange().createContextualFragment(ddllisttemplate)) 
@@ -78,48 +85,43 @@ window.addEventListener('load', function(){
 
 
         //find the url chosen product + fill doc
-    const chosenProduct = productArray.find(function(product){
-        //if url id reurns this product 
-        if(incomingID === product.productID){
-            console.log("found matching ID")
-            
-            return product
-        }
-    })
-        if(chosenProduct != undefined){
-            dropdownbar.querySelector('p').innerText = chosenProduct.title
+        let chosenprod = ChosenProductFinder(productArray, incomingID)
+        console.log(chosenprod)
+        
+        if(chosenprod != undefined){
+            dropdownbar.querySelector('p').innerText = chosenprod.title
             //add logic for inner text dropdownbar.p for incoming ID
-            const elementstemplate = BuildTemplateModels(chosenProduct)
+            const elementstemplate = BuildTemplateModels(chosenprod)
             //build template models
             //insert into dom and replace values where needed
             //title
-            pageTitle.innerText = chosenProduct.title;
+            pageTitle.innerText = chosenprod.title;
             //youtubelink
             embededvideo.appendChild(elementstemplate.youtube)
             //image1
-             productimage1.src = chosenProduct.imgSrc1;
+             productimage1.src = chosenprod.imgOne;
             //image2
-            productimage2.src = chosenProduct.imgSrc2;
+            productimage2.src = chosenprod.imgTwo;
             //generalSVG
-            generalrating.classList = chosenProduct.generalRating;
+            generalrating.innerHTML = chosenprod.generalRating;
             //priceparagraph
-            priceparagraph.innerText = chosenProduct.price;
+            priceparagraph.innerText = chosenprod.priceDesc;
             //pricesvg
-            priceratingsvg.classList = chosenProduct.priceRating;
+            priceratingsvg.classList = chosenprod.priceRating;
             //strengthparagraph
-            strengthparagraph.innerText = chosenProduct.strength;
+            strengthparagraph.innerText = chosenprod.strengthDesc;
             //strengthsvg
-            strengthratingsvg.classList = chosenProduct.strengthRating;
+            strengthratingsvg.classList = chosenprod.strengthRating;
             //effectparagraph
-            effectparagraph.innerText = chosenProduct.effect;
+            effectparagraph.innerText = chosenprod.effectDesc;
             //effectsvg
-            effectratingsvg.classList = chosenProduct.effectRating;
+            effectratingsvg.classList = chosenprod.effectRating;
             //taste paragraph
-            tasteparagraph.innerText = chosenProduct.taste;
+            tasteparagraph.innerText = chosenprod.tasteDesc;
             //taste rating
-            tasteratingsvg.classList = chosenProduct.tasteRating;
+            tasteratingsvg.classList = chosenprod.tasteRating;
             //writeup blog post
-            writeupparagraph.innerText = chosenProduct.writeupBlog;
+            writeupparagraph.innerText = chosenprod.blog;
     
         }
         else{
@@ -137,6 +139,15 @@ window.addEventListener('load', function(){
 })
 //global
 
+ChosenProductFinder = (productArray, incomingID) => {
+    for(const product in productArray[0]){
+        //if url id reurns this product 
+    if(incomingID == productArray[0][product].productId){
+        console.log("found matching ID")
+        
+        return productArray[0][product]
+    }}}
+
 const GetIncomingID = () => {
     // ?productID=THISISATEST
     const QueryString = window.location.search
@@ -149,7 +160,7 @@ const GetIncomingID = () => {
 //commented out for tags in favor of class name changes
 const BuildTemplateModels = (productItem) => {
     let elementsObject;
-    const youtubelinkframe = `<iframe width="560" height="315" src="${productItem.YouTubeEmbed}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+    const youtubelinkframe = `<iframe width="560" height="315" src="${productItem.youtubeEmbed}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
     youtubelinktemplate = document.createRange().createContextualFragment(youtubelinkframe)
     
     elementsObject = {
